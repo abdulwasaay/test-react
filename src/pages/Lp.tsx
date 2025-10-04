@@ -2,6 +2,8 @@ import Awards from "../components/Awards"
 import CaviarSection from "../components/Caviar"
 import Chooseus from "../components/Chooseus"
 import Clients from "../components/Clients"
+import Contact from "../components/contact"
+import Footer from "../components/footer"
 import HeroSection from "../components/herosection"
 import Industries from "../components/Industries"
 import InfoSec from "../components/infoSection"
@@ -28,6 +30,8 @@ const LandingPage = () => {
       <Technologies />
       <Products />
       <Awards />
+      <Contact />
+      <Footer />
     </div>
   )
 }
