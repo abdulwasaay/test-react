@@ -24,7 +24,7 @@ const testimonials = [
 ];
 
 const Clients = () => (
-    <section
+    <section id="testimonials"
         className="relative w-full min-h-[400px] md:min-h-[500px] flex items-center justify-center py-12 px-4 md:px-0"
         style={{
             backgroundImage: "url('/bgl.png')",

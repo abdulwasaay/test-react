@@ -43,7 +43,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="relative w-full bg-[url('/shape3.png')] text-white  px-6 lg:px-20 overflow-hidden pt-80">
+    <section id="services" className="relative w-full bg-[url('/shape3.png')] text-white  px-6 lg:px-20 overflow-hidden pt-80">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         
         {/* Left Content */}

@@ -61,7 +61,7 @@ const features = [
 ];
 
 const Chooseus = () => (
-  <section className="w-full bg-gradient-to-b from-[#f5f7fa] to-[#e3eaf5] py-14 px-2 md:px-0">
+  <section id="choose" className="w-full bg-gradient-to-b from-[#f5f7fa] to-[#e3eaf5] py-14 px-2 md:px-0">
     <div className="max-w-4xl mx-auto text-center">
       <h2 className="text-3xl md:text-5xl font-extrabold text-gray-800 mb-3 tracking-tight drop-shadow-sm">
         Why Choose Us?

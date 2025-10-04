@@ -23,7 +23,7 @@ const technologies = [
 
 export default function Technologies() {
     return (
-        <section className="relative bg-[#030B21] py-20">
+        <section id="Technologies" className="relative bg-[#030B21] py-20">
             <div className="max-w-7xl mx-auto px-4">
                 {/* Background decorations */}
                 <div className="absolute inset-0 overflow-hidden">

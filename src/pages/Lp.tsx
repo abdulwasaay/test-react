@@ -15,12 +15,12 @@ import Technologies from "../components/Technologies"
 const LandingPage = () => {
   return (
     <div >
-      {/* <div className="landing-page bg-[#20222D]">
+      <div className="landing-page bg-[#20222D]">
         <div className='content'>
           <NavbarLat />
           <HeroSection />
         </div>
-      </div> */}
+      </div>
       <InfoSec />
       <ServicesSection />
       <CaviarSection />

@@ -10,6 +10,7 @@ export default function CaviarSection() {
 
     return (
         <section
+        id="portfolio"
             className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat py-16 px-4 md:px-12 flex items-center"
             style={{ backgroundImage: "url('/food.jpg')" }}
         >
