@@ -14,11 +14,11 @@ export default function CaviarSection() {
             className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat py-16 px-4 md:px-12 flex items-center"
             style={{ backgroundImage: "url('/food.jpg')" }}
         >
-            {/* Overlay */}
+       
             <div className="absolute inset-0 bg-black/70 z-0"></div>
 
             <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-10 items-center md:justify-center">
-                {/* Left Content */}
+             
                 <div className="flex-1 space-y-6 max-w-lg">
                     <div className="flex flex-wrap gap-3">
                         <span className="bg-white/80 text-sm px-3 py-1 rounded-full">Food</span>

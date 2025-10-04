@@ -39,7 +39,7 @@ const Clients = () => (
             <div className="flex-1 flex flex-col justify-center items-start">
                 <div className="flex items-center mb-4">
                     <div className="bg-white rounded-full p-3 flex items-center justify-center shadow-lg mr-3">
-                        {/* Dummy quote icon */}
+                  
                        <img src="/ellipse1.png" alt="ellips" className="w-11"/>
                     </div>
 
@@ -58,8 +58,8 @@ const Clients = () => (
                     modules={[Autoplay, Pagination]}
                     pagination={{
                         clickable: true,
-                        el: '.swiper-pagination', // Add this
-                        type: 'bullets', // Add this
+                        el: '.swiper-pagination', 
+                        type: 'bullets', 
                     }}
                     className="w-full max-w-lg custom-pagination"
                 >

@@ -8,7 +8,6 @@ const Awards = () => {
         { image: '/award.png', alt: 'Happy Client' },
     ];
 
-    // Duplicate awards for smooth infinite scroll
     const duplicatedAwards = [...awards, ...awards];
 
     return (
@@ -19,11 +18,8 @@ const Awards = () => {
                 </h3>
 
                 <div className="relative w-full">
-                    {/* Gradient Overlays */}
                     <div className="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-gray-50 to-transparent z-10" />
                     <div className="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-gray-50 to-transparent z-10" />
-
-                    {/* Marquee Container */}
                     <div className="marquee-container">
                         <div className="marquee">
                             {duplicatedAwards.map((award, idx) => (
