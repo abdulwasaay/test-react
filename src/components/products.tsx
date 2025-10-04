@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Tab } from '@headlessui/react';
-import { cn } from '../utils/cn';
+import cn from '../utils/Cn';
 
 const products = [
     { category: 'ALL', id: 'all' },
@@ -59,6 +59,8 @@ const productImages: any = {
 
 export default function Products() {
     const [selectedTab, setSelectedTab] = useState('all');
+
+    console.log(selectedTab)
 
     return (
         <section id='products' className="bg-gradient-to-b from-red-600 to-red-700 py-20">
