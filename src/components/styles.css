@@ -1,0 +1,45 @@
+.custom-pagination .swiper-pagination {
+    bottom: 0 !important;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    margin: 0 4px !important;
+    transition: all 0.3s ease;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+    width: 24px;
+    background: #ef4444;
+    border-radius: 4px;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+.marquee {
+    display: flex;
+    animation: scroll 10s linear infinite;
+    width: fit-content;
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
