@@ -50,7 +50,7 @@ const Clients = () => (
                 </h2>
             </div>
             {/* Right Side - Swiper Slider */}
-            <div className="flex-1 flex justify-center items-center">
+            <div className="w-full md:flex-1">
                 <Swiper
                     spaceBetween={40}
                     loop

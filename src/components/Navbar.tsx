@@ -61,7 +61,7 @@ const NavbarLat = () => {
                 {/* Mobile Navigation */}
                 {isMenuOpen && (
                     <div className="lg:hidden fixed inset-0 top-[72px] bg-[#20222D]/95 backdrop-blur-md z-[999]">
-                        <nav className="flex flex-col p-4">
+                        <nav className="flex flex-col gap-3 p-4">
                             {navLinks.map((link) => (
                                 <NavLink
                                     key={link.path}

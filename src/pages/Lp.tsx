@@ -27,8 +27,8 @@ const LandingPage = () => {
       <Chooseus />
       <Clients />
       <Industries />
-      <Technologies />
-      <Products />
+     <Technologies />
+       <Products />
       <Awards />
       <Contact />
       <Footer />

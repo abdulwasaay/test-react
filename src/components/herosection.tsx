@@ -16,11 +16,18 @@ const HeroSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
           {/* Left - Mobile Image */}
           <div className="w-full lg:w-1/2 order-2 lg:order-1">
-            <img 
-              src="/mobs.png" 
-              alt="Mobile Apps Showcase" 
+            <img
+              src="/mobs.png"
+              alt="Mobile Apps Showcase"
               className="w-full h-auto max-w-[550px] mx-auto hover:scale-105 transition-transform duration-500"
             />
+            {/* Mobile Button - Shows below image on small screens */}
+            <div className="lg:hidden mt-8 text-center">
+              <ButtonLatest
+                title="GET A FREE QUOTE"
+                classes="inline-block text-white py-4 px-8 rounded-lg bg-gradient-to-r from-[#FF0000] to-black hover:shadow-lg hover:shadow-red-500/20 transform hover:-translate-y-1 transition-all duration-300"
+              />
+            </div>
           </div>
 
           {/* Right - Content Slider */}
@@ -44,24 +51,27 @@ const HeroSection = () => {
                 swiper.navigation.init();
                 swiper.navigation.update();
               }}
-              className="w-full max-w-[700px]"
+              className="w-full max-w-[700px] mx-auto"
             >
               {[1, 2, 3].map((slide) => (
                 <SwiperSlide key={slide}>
-                  <div className="text-white space-y-6">
-                    <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                  <div className="text-white space-y-6 text-center lg:text-left">
+                    <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mx-auto lg:mx-0">
                       Leading the Way in App{" "}
                       <span className="block text-white">
                         Development Innovation
                       </span>
                     </h1>
-                    <p className="text-base md:text-lg text-gray-300 max-w-[500px]">
+                    <p className="text-base md:text-lg text-gray-300 max-w-[500px] mx-auto lg:mx-0">
                       We build Android & iOS Mobile Apps that cater all your business needs and take it to the next level.
                     </p>
-                    <ButtonLatest
-                      title="GET A FREE QUOTE"
-                      classes="inline-block py-4 px-8 rounded-lg bg-gradient-to-r from-[#FF0000] to-black hover:shadow-lg hover:shadow-red-500/20 transform hover:-translate-y-1 transition-all duration-300"
-                    />
+                    {/* Desktop Button - Hidden on mobile, shows on large screens */}
+                    <div className="hidden lg:block">
+                      <ButtonLatest
+                        title="GET A FREE QUOTE"
+                        classes="inline-block py-4 px-8 rounded-lg bg-gradient-to-r from-[#FF0000] to-black hover:shadow-lg hover:shadow-red-500/20 transform hover:-translate-y-1 transition-all duration-300"
+                      />
+                    </div>
                   </div>
                 </SwiperSlide>
               ))}
