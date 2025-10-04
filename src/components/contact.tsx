@@ -2,7 +2,7 @@ import { Phone, Mail, MapPin, ArrowRight } from 'lucide-react';
 
 const Contact = () => {
     return (
-        <section className="bg-gradient-to-b from-red-600 to-red-700 py-16">
+        <section id='Contact' className="bg-gradient-to-b from-red-600 to-red-700 py-16">
             <div className="max-w-7xl mx-auto px-4 md:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     {/* Left Side - Content */}
